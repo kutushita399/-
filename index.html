@@ -3,99 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サンプルページ</title>
-
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #0056b3;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        button {
-            padding: 10px 15px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-    </style>
+    <title>HTMLサンプルページ</title>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>これはサンプルページのメインタイトルです</h1>
-        </header>
+    <header>
+        <h1>ウェブサイトのタイトル</h1>
+        <p>このサイトはHTMLのサンプルです。</p>
+    </header>
 
-        <main>
-            <h2>セクション1：基本的なテキスト</h2>
-            <p>
-                これは段落です。Webページでは、このように文章を記述します。
-                <b>太字</b>や<i>斜体</i>など、テキストを装飾することも可能です。
-            </p>
+    <hr>
 
-            <h2>セクション2：リストと画像</h2>
-            <p>箇条書きのリストは以下のようになります。</p>
-            <ul>
-                <li>リスト項目 1</li>
-                <li>リスト項目 2</li>
-                <li>リスト項目 3</li>
-            </ul>
-            <p>次に画像を表示してみましょう。</p>
-            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="サンプル画像">
+    <nav>
+        <h2>サイト内メニュー</h2>
+        <ul>
+            <li><a href="#about">概要</a></li>
+            <li><a href="#form">お問い合わせ</a></li>
+            <li><a href="#access">アクセス</a></li>
+        </ul>
+    </nav>
 
-            <h2>セクション3：リンクとインタラクション</h2>
-            <p>
-                他のページへの<a href="https://www.google.com" target="_blank">リンク</a>を設置できます。
-                `target="_blank"`を指定すると、新しいタブでリンクが開きます。
-            </p>
-            <button id="alertButton">クリックしてね</button>
-        </main>
+    <hr>
 
-        <footer>
-            <p style="text-align: center; font-size: 0.9em; color: #777;">
-                &copy; 2025 サンプルサイト
-            </p>
-        </footer>
-    </div>
+    <main>
+        <article id="about">
+            <h2><a id="about"></a>概要</h2>
+            <section>
+                <h3>このページについて</h3>
+                <p>このページは、Qiitaの記事を参考にして作成されたHTMLのサンプルです。<strong>重要なテキスト</strong>はstrongタグで強調しています。</p>
+                <p>以下の要素を含んでいます:</p>
+                <ul>
+                    <li>ヘッダー、フッターなどの構造化タグ</li>
+                    <li>見出し、段落などのテキストタグ</li>
+                    <li>画像を表示するimgタグ</li>
+                    <li>お問い合わせフォーム</li>
+                    <li>アクセスマップを示すテーブル</li>
+                </ul>
+                <img src="https://via.placeholder.com/400x200.png?text=Sample+Image" alt="サンプル画像">
+            </section>
+        </article>
 
-    <script>
-        // idが"alertButton"の要素（ボタン）を取得
-        const button = document.getElementById('alertButton');
+        <hr>
 
-        // ボタンがクリックされた時の処理を定義
-        button.addEventListener('click', function() {
-            alert('ボタンがクリックされました！');
-        });
-    </script>
+        <article id="form">
+            <h2><a id="form"></a>お問い合わせフォーム</h2>
+            <section>
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">お名前:</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="mail">メールアドレス:</label>
+                        <input type="email" id="mail" name="user_email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="msg">お問い合わせ内容:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit">送信</button>
+                    </div>
+                </form>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="access">
+            <h2><a id="access"></a>アクセス</h2>
+            <section>
+                <h3>事業所一覧</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>事業所名</th>
+                            <th>住所</th>
+                            <th>電話番号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>東京本社</td>
+                            <td>東京都新宿区ＸＸＸ</td>
+                            <td>03-1234-5678</td>
+                        </tr>
+                        <tr>
+                            <td>大阪支社</td>
+                            <td>大阪府大阪市ＹＹＹ</td>
+                            <td>06-1234-5678</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 HTMLサンプル. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
