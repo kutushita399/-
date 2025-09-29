@@ -3,111 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTMLサンプルページ</title>
+    <title>ページ内検索機能</title>
 </head>
 <body>
 
-    <header>
-        <h1>ウェブサイトのタイトル</h1>
-        <p>このサイトはHTMLのサンプルです。</p>
-    </header>
+    <h2>ページ内検索</h2>
+    <input type="text" id="searchInput" placeholder="キーワードを入力してください">
+    <button id="searchButton">検索</button>
 
     <hr>
 
-    <nav>
-        <h2>サイト内メニュー</h2>
-        <ul>
-            <li><a href="#about">コンテンツ</a></li>
-            <li><a href="#form">お問い合わせ</a></li>
-            <li><a href="#access">アクセス</a></li>
-            <strong></strong>
-        </ul>
-    </nav>
+    <h2>検索結果</h2>
+    <div id="searchResults">
+        </div>
 
-    <hr>
-
-    <main>
-        <article id="about">
-            <h2><a id="about"></a>コンテンツ</h2>
-            <section>
-                <h3>このページについて</h3>
-                <p>このページは、Qiitaの記事を参考にして作成されたHTMLのサンプルです。<strong>重要なテキスト</strong>はstrongタグで強調しています。</p>
-                <p>以下の要素を含んでいます:</p>
-                <ul>
-                    <li>ヘッダー、フッターなどの構造化タグ</li>
-                    <li>見出し、段落などのテキストタグ</li>
-                    <li>画像を表示するimgタグ</li>
-                    <li>お問い合わせフォーム</li>
-                    <li>アクセスマップを示すテーブル</li>
-                </ul>
-                <img src="https://via.placeholder.com/400x200.png?text=Sample+Image" alt="サンプル画像">
-            </section>
-        </article>
-
-        <hr>
-
-        <article id="form">
-            <h2><a id="form"></a>お問い合わせフォーム</h2>
-            <section>
-                <form action="#" method="post">
-                    <div>
-                        <label for="name">お名前:</label>
-                        <input type="text" id="name" name="user_name" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="mail">メールアドレス:</label>
-                        <input type="email" id="mail" name="user_email" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="msg">お問い合わせ内容:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </div>
-                    <br>
-                    <div>
-                        <button type="submit">送信</button>
-                    </div>
-                </form>
-            </section>
-        </article>
-
-        <hr>
-
-        <article id="access">
-            <h2><a id="access"></a>アクセス</h2>
-            <section>
-                <h3>事業所一覧</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>事業所名</th>
-                            <th>住所</th>
-                            <th>電話番号</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>東京本社</td>
-                            <td>東京都新宿区ＸＸＸ</td>
-                            <td>03-1234-5678</td>
-                        </tr>
-                        <tr>
-                            <td>大阪支社</td>
-                            <td>大阪府大阪市ＹＹＹ</td>
-                            <td>06-1234-5678</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </article>
-    </main>
-
-    <hr>
-
-    <footer>
-        <p>&copy; 2025 HTMLサンプル. All rights reserved.</p>
-    </footer>
+    <script>
+        // ここにJavaScriptで検索ロジックを記述します
+    </script>
 
 </body>
 </html>
