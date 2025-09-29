@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプルページ</title>
 
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>これはサンプルページのメインタイトルです</h1>
+        </header>
+
+        <main>
+            <h2>セクション1：基本的なテキスト</h2>
+            <p>
+                これは段落です。Webページでは、このように文章を記述します。
+                <b>太字</b>や<i>斜体</i>など、テキストを装飾することも可能です。
+            </p>
+
+            <h2>セクション2：リストと画像</h2>
+            <p>箇条書きのリストは以下のようになります。</p>
+            <ul>
+                <li>リスト項目 1</li>
+                <li>リスト項目 2</li>
+                <li>リスト項目 3</li>
+            </ul>
+            <p>次に画像を表示してみましょう。</p>
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="サンプル画像">
+
+            <h2>セクション3：リンクとインタラクション</h2>
+            <p>
+                他のページへの<a href="https://www.google.com" target="_blank">リンク</a>を設置できます。
+                `target="_blank"`を指定すると、新しいタブでリンクが開きます。
+            </p>
+            <button id="alertButton">クリックしてね</button>
+        </main>
+
+        <footer>
+            <p style="text-align: center; font-size: 0.9em; color: #777;">
+                &copy; 2025 サンプルサイト
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // idが"alertButton"の要素（ボタン）を取得
+        const button = document.getElementById('alertButton');
+
+        // ボタンがクリックされた時の処理を定義
+        button.addEventListener('click', function() {
+            alert('ボタンがクリックされました！');
+        });
+    </script>
+
+</body>
+</html>
