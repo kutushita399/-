@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ページ内検索機能</title>
+    <title>コンテンツ構造</title>
+
+    <!-- 外部CSSファイルを読み込むためのリンク（あとで作成） -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>
-            コンテンツ構造
-        </h1>
-        <!-- テーブルのボディを作成-->
-        <!--border = "1" を使うことでCSSを使わずに枠の線をみることができる-->
-        <table broder = "1">
 
+    <div id="container">
+        
+        <h1>コンテンツ構造</h1>
+
+        <table>
             <thead>
                 <tr>
                     <th>タグ</th>
@@ -21,67 +22,92 @@
                     <th>例</th>
                 </tr>
             </thead>
-
             <tbody>
+                <!-- No.1: header -->
                 <tr>
+                    <td><code>&lt;header&gt;</code></td>
+                    <td>ヘッダーセクション</td>
                     <td>
-                        <code>&lt;header&gt;</code>
-                    </td>
-                    <td>ヘッダーセッション</td>
-                    <td>
-                        <code>&lt;header&gt;...&lt;/header&gt;</code>
+                        <div class="code-container">
+                            <code class="code-to-copy">&lt;header&gt;...&lt;/header&gt;</code>
+                            <button class="copy-button">コピー</button>
+                        </div>
                     </td>
                 </tr>
+                <!-- No.2: nav -->
                 <tr>
+                    <td><code>&lt;nav&gt;</code></td>
+                    <td>ナビゲーションリンク</td>
                     <td>
-                        <code>&lt;main&gt;</code>
+                        <div class="code-container">
+                            <code class="code-to-copy">&lt;nav&gt;...&lt;/nav&gt;</code>
+                            <button class="copy-button">コピー</button>
+                        </div>
                     </td>
+                </tr>
+                <!-- No.3: main -->
+                <tr>
+                    <td><code>&lt;main&gt;</code></td>
                     <td>メインコンテンツ</td>
                     <td>
-                        <code>&lt;main&gt;...&lt;/main&gt;</code>
+                        <div class="code-container">
+                            <code class="code-to-copy">&lt;main&gt;...&lt;/main&gt;</code>
+                            <button class="copy-button">コピー</button>
+                        </div>
                     </td>
                 </tr>
+                <!-- No.4: section -->
                 <tr>
-                    <td>
-                        <code>&lt;section&gt;</code>
-                    </td>
+                    <td><code>&lt;section&gt;</code></td>
                     <td>文書のセクション</td>
                     <td>
-                        <code>&lt;section&gt;...&lt;/section&gt;</code>
+                        <div class="code-container">
+                            <code class="code-to-copy">&lt;section&gt;...&lt;/section&gt;</code>
+                            <button class="copy-button">コピー</button>
+                        </div>
                     </td>
                 </tr>
+                <!-- No.5: article -->
                 <tr>
-                    <td>
-                        <code>&lt;article&gt;</code>
-                    </td>
+                    <td><code>&lt;article&gt;</code></td>
                     <td>独立したコンテンツ</td>
                     <td>
-                        <code>&lt;article&gt;...&lt;/article&gt;</code>
+                        <div class="code-container">
+                            <code class="code-to-copy">&lt;article&gt;...&lt;/article&gt;</code>
+                            <button class="copy-button">コピー</button>
+                        </div>
                     </td>
                 </tr>
+                <!-- No.6: aside -->
                 <tr>
-                    <td>
-                        <code>&lt;aside&gt;</code>
-                    </td>
+                    <td><code>&lt;aside&gt;</code></td>
                     <td>サイドコンテンツ</td>
                     <td>
-                        <code>&lt;aside&gt;...&lt;/aside&gt;</code>
+                        <div class="code-container">
+                            <code class="code-to-copy">&lt;aside&gt;...&lt;/aside&gt;</code>
+                            <button class="copy-button">コピー</button>
+                        </div>
                     </td>
                 </tr>
+                <!-- No.7: footer -->
                 <tr>
-                    <td>
-                        <code>&lt;footer&gt;</code>
-                    </td>
+                    <td><code>&lt;footer&gt;</code></td>
                     <td>フッターセクション</td>
                     <td>
-                        <code>&lt;footer&gt;...&lt;/footer&gt;</code>
+                        <div class="code-container">
+                            <code class="code-to-copy">&lt;footer&gt;...&lt;/footer&gt;</code>
+                            <button class="copy-button">コピー</button>
+                        </div>
                     </td>
                 </tr>
             </tbody>
         </table>
-        
+
     </div>
 
+    <!-- 外部JavaScriptファイルを読み込むための記述（あとで作成） -->
+    <!-- defer属性はHTMLの読み込みが終わってからJSを実行するためのもの -->
+    <script src="script.js" defer></script>
 
 </body>
 </html>
